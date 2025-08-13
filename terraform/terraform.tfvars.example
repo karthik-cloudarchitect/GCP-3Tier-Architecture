@@ -1,0 +1,27 @@
+# Example Terraform variables file
+# Copy this file to terraform.tfvars and update with your actual values
+
+# GCP Project Configuration
+project_id   = "your-gcp-project-id"
+project_name = "three-tier-app"
+region       = "us-central1"
+zone         = "us-central1-a"
+
+# Network Configuration
+public_subnet_cidr  = "10.0.1.0/24"
+private_subnet_cidr = "10.0.2.0/24"
+db_subnet_cidr      = "10.0.3.0/24"
+
+# Compute Configuration
+machine_type  = "e2-medium"
+min_replicas  = 2
+max_replicas  = 10
+
+# Database Configuration
+db_instance_name = "main-database"
+db_name          = "appdb"
+db_user          = "appuser"
+
+# Application Configuration
+app_port    = 8080
+environment = "dev"
